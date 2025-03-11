@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
+import MushroomCharacter from './MushroomCharacter';
 
 function App() {
   const [input, setInput] = useState('');
@@ -46,7 +47,7 @@ function App() {
   };
   
   return (
-    <div className="App">
+    <div className="App mushroom-bg">
       <header className="App-header">
         <h1>ChatGPT Web App</h1>
       </header>
@@ -70,6 +71,9 @@ function App() {
           </div>
         )}
       </main>
+      
+      {/* 添加擬人化蘑菇角色 */}
+      <MushroomCharacter />
     </div>
   );
 }
